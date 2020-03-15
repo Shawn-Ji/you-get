@@ -934,6 +934,7 @@ def download_urls(
     urls, title, ext, total_size, output_dir='.', refer=None, merge=True,
     faker=False, headers={}, **kwargs
 ):
+    print("*******************use download_urls")
     assert urls
     if json_output:
         json_output_.download_urls(
@@ -1100,6 +1101,7 @@ def download_url_ffmpeg(
     url, title, ext, params={}, total_size=0, output_dir='.', refer=None,
     merge=True, faker=False, stream=True
 ):
+    print("*******************use download_url_ffmpeg")
     assert url
     if dry_run:
         print_user_agent(faker=faker)
