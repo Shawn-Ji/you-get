@@ -1077,6 +1077,7 @@ def download_rtmp_url(
     url, title, ext, params={}, total_size=0, output_dir='.', refer=None,
     merge=True, faker=False
 ):
+    print("*******************use download_rtmp_url")
     assert url
     if dry_run:
         print_user_agent(faker=faker)
